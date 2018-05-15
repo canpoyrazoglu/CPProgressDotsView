@@ -13,6 +13,7 @@
 		36BA1D6620AAC17F00B26127 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36BA1D6520AAC17F00B26127 /* Assets.xcassets */; };
 		36BA1D6920AAC17F00B26127 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36BA1D6720AAC17F00B26127 /* LaunchScreen.storyboard */; };
 		36BA1D6C20AAC17F00B26127 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 36BA1D6B20AAC17F00B26127 /* main.m */; };
+		36BA1D7520AAC62000B26127 /* CPProgressDotsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36BA1D7420AAC62000B26127 /* CPProgressDotsView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		36BA1D6820AAC17F00B26127 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36BA1D6A20AAC17F00B26127 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36BA1D6B20AAC17F00B26127 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		36BA1D7320AAC62000B26127 /* CPProgressDotsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPProgressDotsView.h; sourceTree = "<group>"; };
+		36BA1D7420AAC62000B26127 /* CPProgressDotsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPProgressDotsView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		36BA1D5B20AAC17D00B26127 /* CPProgressDotsView */ = {
 			isa = PBXGroup;
 			children = (
+				36BA1D7220AAC61100B26127 /* Classes */,
 				36BA1D5C20AAC17D00B26127 /* AppDelegate.h */,
 				36BA1D5D20AAC17D00B26127 /* AppDelegate.m */,
 				36BA1D5F20AAC17D00B26127 /* ViewController.h */,
@@ -69,6 +73,15 @@
 				36BA1D6B20AAC17F00B26127 /* main.m */,
 			);
 			path = CPProgressDotsView;
+			sourceTree = "<group>";
+		};
+		36BA1D7220AAC61100B26127 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				36BA1D7320AAC62000B26127 /* CPProgressDotsView.h */,
+				36BA1D7420AAC62000B26127 /* CPProgressDotsView.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36BA1D7520AAC62000B26127 /* CPProgressDotsView.m in Sources */,
 				36BA1D6120AAC17D00B26127 /* ViewController.m in Sources */,
 				36BA1D6C20AAC17F00B26127 /* main.m in Sources */,
 				36BA1D5E20AAC17D00B26127 /* AppDelegate.m in Sources */,
@@ -283,7 +297,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CPProgressDotsView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -291,6 +306,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.canpoyrazoglu.CPProgressDotsView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -299,7 +315,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CPProgressDotsView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -307,6 +324,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.canpoyrazoglu.CPProgressDotsView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
