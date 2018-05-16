@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "CPProgressDotsView"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "A customizable, Interface Builder-friendly loading indicator view."
   s.description  = "A customizable, Interface Builder-friendly loading indicator view with dots that mimics the 'typing' notifications seen in various apps. All the properties can be directly set from Interface Builder and will update in realtime (of course, animations won't play in Interface Builder), the view can be customized without writing a single line of code."
   s.homepage     = "https://github.com/canpoyrazoglu/CPProgressDotsView"
